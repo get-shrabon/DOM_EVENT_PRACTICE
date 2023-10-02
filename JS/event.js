@@ -22,15 +22,35 @@
 
 /* Delete Page */
 
+// document
+//   .getElementById("delete_input")
+//   .addEventListener("keyup", function (event) {
+//     const text = event.target.value;
+//     const deleteButton = document.getElementById("delete_btn");
+//     if (text === "delete") {
+//       deleteButton.removeAttribute("disabled");
+//     } else {
+//       deleteButton.setAttribute("disabled", true);
+//     }
+//   });
+// document.getElementById("delete_btn").addEventListener("click", function () {
+//   const secret = document.getElementById("hide_text");
+//   secret.style.display = "none";
+// });
+
+/* Second Hide  */
 document
-  .getElementById("delete_input")
+  .getElementById("text_type")
   .addEventListener("keyup", function (event) {
-    const text = event.target.value;
-    const deleteButton = document.getElementById("delete_btn");
-    if (text === "delete") {
-      deleteButton.removeAttribute("disabled");
-    }
-    else{
-        deleteButton.setAttribute("disabled", true);
+    const hideTextes = event.target.value;
+    const hideButton = document.getElementById("hide_btn");
+    if (hideTextes === "hide") {
+        hideButton.removeAttribute("disabled");
+    } else {
+        hideButton.setAttribute("disabled", true);
     }
   });
+document.getElementById("hide_btn").addEventListener("click", function () {
+  const hideText = document.getElementById("hide_all_text");
+  hideText.style.display = "none";
+});
