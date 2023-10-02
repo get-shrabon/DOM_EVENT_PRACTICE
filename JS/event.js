@@ -45,9 +45,9 @@ document
     const hideTextes = event.target.value;
     const hideButton = document.getElementById("hide_btn");
     if (hideTextes === "hide") {
-        hideButton.removeAttribute("disabled");
+      hideButton.removeAttribute("disabled");
     } else {
-        hideButton.setAttribute("disabled", true);
+      hideButton.setAttribute("disabled", true);
     }
   });
 document.getElementById("hide_btn").addEventListener("click", function () {
