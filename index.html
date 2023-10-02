@@ -5,60 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM | EVENT | JS</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <section class="container">
-        <div id="box" class="box">
-            <button id="click_button">Click Me</button>
+      <div id="box" class="box">
+        <button id="click_button">Click Me</button>
+      </div>
+      <div>
+        <p id="update_text">Defult Text</p>
+        <input id="input" type="text" />
+        <button id="update_button">Update</button>
+      </div>
+      <div class="comment_box my-5" id="comment_container">
+        <div class="card-group gap-3">
+          <div class="card">
+            <img src="images/donation0.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/donation1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/donation6.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
         </div>
-        <div>
-           <p id="update_text">Defult Text</p>
-            <input id="input" type="text">
-            <button id="update_button">Update</button>
-        </div>
-        <div class="comment_box  my-5" id="comment_container">
-            <div class="card-group gap-3">
-                <div class="card">
-                  <img src="images/donation0.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-body-secondary">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="images/donation1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-body-secondary">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="images/donation6.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-body-secondary">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-              </div>
-              <p><small>All Comment Here</small></p>
-        </div>
-        <div class="comment_input">
-            <textarea name="" id="comment_area" cols="30" rows="3"></textarea> <br>
-            <button id="post_button">Post</button>
-        </div>
+        <p><small>All Comment Here</small></p>
+      </div>
+      <div class="comment_input">
+        <textarea name="" id="comment_area" cols="30" rows="3"></textarea>
+        <br />
+        <button id="post_button">Post</button>
+      </div>
     </section>
 
     <script src="JS/event.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
